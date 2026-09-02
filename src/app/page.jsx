@@ -4,12 +4,13 @@ export default function Page() {
   return (
     <div>
 
-        <div className="h-170 md:h-130 bg">
-            <h1 className="text-white max-md:text-center font-black leading-16 text-4xl pt-44 md:pt-20 md:pl-20">
-              Discover the world  Your journey starts here.
+        <div className="h-170 md:h-130 bg text-center text-white">
+            <h1 className=" max-md:text-center font-black leading-16 text-4xl md:text-6xl pt-44 md:pt-44 md:pl-20">
+              Discover the world  
             </h1>
+            <p className='text-xl'>Your journey starts here.</p>
 
-            <button className="px-5 py-2 bg-amber-500 ml-20 mt-12 font-semibold rounded">Explore Destinations</button>
+            <button className="px-5 py-2 border-2 mt-12 font-light rounded">Explore Destinations</button>
         </div>
 
 
@@ -20,6 +21,7 @@ export default function Page() {
               src='/plainLift.png'
               height={20}
               width={20}
+              alt='plain'
             />
             Fight</h2>
           <h2 className='flex items-center gap-1'>
@@ -27,6 +29,7 @@ export default function Page() {
             src='/tree.png'
             height={20}
             width={20}
+            alt='tree'
             />
             Tour</h2>
         </div>

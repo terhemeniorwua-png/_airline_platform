@@ -76,7 +76,7 @@ export default function Navbar() {
 
         <div className='flex items-center gap-5'>
           <Link 
-          className='flex items-center border border-blue-700 rounded px-5 py-2'
+          className='flex items-center border border-blue-700 rounded-xl px-5 py-2'
           href='https://wa.me/09166354571'
           >
             <FaWhatsapp />
@@ -84,7 +84,7 @@ export default function Navbar() {
           </Link>
 
             <Link 
-          className='flex items-center bg-blue-700 text-white rounded-3xl px-8 py-2'
+          className='flex items-center bg-blue-700 text-white rounded-lg px-8 py-2'
           href='/'
           >
             Book Now
