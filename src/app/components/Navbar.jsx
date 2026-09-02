@@ -61,12 +61,16 @@ export default function Navbar() {
     {/* Desktop Nav */}
 
         <nav className='flex gap-64 items-center mx-2 rounded-3xl py-2 px-10 max-md:hidden absolute top-2 bg-white'>
-        <Image
+         
+          <Link href='/'>
+            <Image
           src='/logo.png'
           height={150}
           width={150}
           alt='logo'
         />
+          </Link>
+
         <ul className='flex justify-between gap-10 pt-5'>
              <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Eplore</Link>
              <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Flights</Link>
@@ -76,15 +80,15 @@ export default function Navbar() {
 
         <div className='flex items-center gap-5'>
           <Link 
-          className='flex items-center border border-blue-700 rounded-xl px-5 py-2'
+          className='flex items-center border border-blue-700 rounded-xl px-5 py-2 gap-0.5 hover:bg-gray-50 duration-200'
           href='https://wa.me/09166354571'
           >
-            <FaWhatsapp />
+            <FaWhatsapp  className='text-xl'/>
             What's up
           </Link>
 
             <Link 
-          className='flex items-center bg-blue-700 text-white rounded-lg px-8 py-2'
+          className='flex items-center bg-blue-700 text-white rounded-lg px-8 py-2 hover:bg-blue-600 duration-200'
           href='/'
           >
             Book Now

@@ -1,8 +1,12 @@
-import Image from 'next/image'
+// import Image from 'next/image'
+
+import { FaArrowRight } from "react-icons/fa";
 
 export default function Page() {
   return (
     <div>
+
+      {/* Hero Section */}
 
         <div className="h-170 md:h-130 bg text-center text-white">
             <h1 className=" max-md:text-center font-black leading-16 text-4xl md:text-6xl pt-44 md:pt-44 md:pl-20">
@@ -14,44 +18,31 @@ export default function Page() {
         </div>
 
 
-      <div className='shadow-2xl mb-20'>
-        <div className="flex gap-10 py-5 bg-white items-center w-[20%] left-[40%] bottom-5 justify-center absolute">
-          <h2 className='flex items-center gap-1'>
-            <Image
-              src='/plainLift.png'
-              height={20}
-              width={20}
-              alt='plain'
-            />
-            Fight</h2>
-          <h2 className='flex items-center gap-1'>
-            <Image
-            src='/tree.png'
-            height={20}
-            width={20}
-            alt='tree'
-            />
-            Tour</h2>
-        </div>
+  {/* search flight  */}
+  
 
+        <div className=" py-2 w-[50%] px-5 shadow-2xl m-auto bg-white relative bottom-10 rounded text-[13px]">
 
-        <div className="flex items-center gap-10 py-8 w-[70%] m-auto bg-white relative bottom-10 justify-center">
+          <div className="flex items-center gap-10">
+
+            <div className="flex gap-1">
+              <input 
+                type="radio"
+                id='round' 
+                name="rad"
+              />
+              <label htmlFor="round">ROUND TRIP</label>
+
+            </div>
+
 
        <div className="flex gap-1">
          <input 
         type="radio"
         id='one' 
+        name="rad"
         />
-        <label htmlFor="one">One way</label>
-
-       </div>
-
-       <div className="flex gap-1">
-          <input 
-        type="radio"
-        id='round' 
-        />
-        <label htmlFor="round">Round Trip</label>
+        <label htmlFor="one">ONE WAY</label>
 
        </div>
 
@@ -59,54 +50,59 @@ export default function Page() {
           <input 
         type="radio"
         id='mult' 
+        name="rad"
         />
-        <label htmlFor="mult">Multicity</label>
+        <label htmlFor="mult">MULTICITY</label>
 
        </div>
+       </div>
+
+    <div className="flex gap-10 items-center text-sm pt-5">
+
+      <div>
+          <h6>From</h6>
+          <p className="text-3xl font-light">Lagos (LOS)</p>
+      </div>
+      <FaArrowRight />
+      <div>
+          <h6>To</h6>
+          <p className="text-3xl font-light">London (LHR)</p>
+      </div>
+
+
+
     </div>
-
-
-{/* select */}
-
-
-        <div className='flex justify-between items-center w-[40%] m-auto border border-gray-300 p-5 mb-20'>
-        <div>
-          <label htmlFor="country">From</label>
-
-        <select id="country" name="country">
-            <option value="nigeria">Nigeria</option>
-            <option value="ghana">Ghana</option>
-            <option value="kenya">Kenya</option>
-            <option value="south-africa">South Africa</option>
-        </select>
-        </div>
-
-        
-           <div>
-          <label htmlFor="country">To</label>
-
-        <select id="country" name="country">
-            <option value="nigeria">Nigeria</option>
-            <option value="ghana">Ghana</option>
-            <option value="kenya">Kenya</option>
-            <option value="south-africa">South Africa</option>
-        </select>
-        </div>
-
-
-      </div>
-
-
-        <div className='flex justify-center'>
-          <button className='bg-blue-700 rounded px-5 py-2 '>
-          Search Flight
-        </button>
-        </div>
-
-  
-
        
+
+      {/* schedule */}
+
+      <div className="flex justify-between items-center">
+
+          <div>
+          
+            <label htmlFor="date">Departure</label> <br />
+            <input type="date" id="date"/>
+          </div>
+
+          <div className="border-x p-2">
+          
+            <label htmlFor="dat">Return</label> <br />
+            <input type="date" id="dat"/>
+          </div>
+
+
+          <div>
+          
+            <label htmlFor="num">Travelers:</label> 
+            <input type="number" id="num" className="w-8 outline-0 ml-4"/> <span>Person / People</span>
+          </div>
+
+          <button className="flex items-center gap-1 bg-blue-700 px-5 py-2 rounded text-white font-semibold hover:bg-blue-600 duration-200">Search Flights <FaArrowRight /></button>
+
       </div>
+      </div>
+
+
     </div>
   );
 }
