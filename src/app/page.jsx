@@ -23,7 +23,7 @@ export default function Page() {
   {/* search flight  */}
   
 
-        <div className=" py-2 w-[90%] md:w-[50%] px-5 shadow-2xl m-auto bg-white relative bottom-24 md:bottom-10 rounded text-[10px] md:text-[13px]">
+        <div className="pt-5 pb-2 md:py-2 w-[90%] md:w-[50%] px-5 shadow-2xl m-auto bg-white relative bottom-24 md:bottom-10 rounded text-[10px] md:text-[13px]">
 
           <div className="flex items-center max-md:justify-between md:gap-10">
 
@@ -93,13 +93,13 @@ export default function Page() {
           </div>
 
 
-          <div>
+          <div className="max-md:my-3">
           
             <label htmlFor="num">Travelers:</label> 
             <input type="number" id="num" className="w-8 outline-0 ml-4"/> <span>Person / People</span>
           </div>
 
-          <Link href='/SearchFlight' className="flex justify-center items-center gap-1 bg-blue-700 px-5 py-2 rounded text-white font-semibold hover:bg-blue-600 duration-200">Search Flights <FaArrowRight /></Link>
+          <Link href='/SearchFlight' className="flex justify-center items-center gap-1 bg-blue-700 px-5 py-3 md:py-2 rounded-3xl text-white font-semibold hover:bg-blue-600 duration-200 max-md:text-sm">Search Flights <FaArrowRight /></Link>
 
       </div>
       </div>

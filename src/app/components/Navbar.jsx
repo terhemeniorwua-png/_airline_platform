@@ -19,18 +19,19 @@ export default function Navbar() {
           height={150}
           width={50}
           alt='logo'
+          className='max-md:w-[20%] h-8'
         />
 
         <div>
           {!displayNav?
           (<HiMenu 
-          className='text-2xl text-white'
+          className='text-4xl text-white'
           onClick={()=>{
             setDisplayNav(true)
           }}
           />):
           (
-            <span className='text-white font-black text-3xl'
+            <span className='text-white font-light text-3xl'
             onClick={()=>{
               setDisplayNav(false)
             }}
