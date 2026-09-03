@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { FaSearch } from 'react-icons/fa';
+import Accommodation from './Accommodation';
 
 export default function page() {
 
@@ -119,8 +120,11 @@ export default function page() {
             ))}
           </div>
         </div>
+
+         <Accommodation />
         </div>
     
+   
     </>
   )
 }
