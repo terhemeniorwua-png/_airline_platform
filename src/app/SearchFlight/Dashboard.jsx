@@ -1,10 +1,10 @@
 'use client'
 import React, { useState } from 'react'
 
-export default function Dashboard({setAirline}) {
+export default function Dashboard({setAirline, range, setRange}) {
 
     const [stops, setStops] = useState('Direct')
-    const [range, setRange] = useState(1000000)
+    
 
 
 
