@@ -40,11 +40,11 @@ export default function page() {
   return (
     <>
     
-        <div className='ExploreBg h-screen text-center pt-36 md:pt-44 text-white'>
+        <div className='ExploreBg h-screen text-center pt-28 md:pt-44 text-white'>
 
             <span className='text-md text-gray-400'>The world is waiting for You</span>
 
-            <h1 className='font-black text-3xl md:text-6xl w-[80%] md:w-[65%] m-auto pb-5 md:py-5'>Find the say for your next great story.</h1>
+            <h1 className='font-black text-5xl md:text-6xl w-[80%] md:w-[65%] m-auto pb-5 md:py-5'>Find the say for your next great story.</h1>
 
             <p className='text-md w-[70%] md:w-[35%] m-auto text-gray-400'>Hotels, homes, apartments and retreats with real deals, anywhere in the world
 
@@ -52,14 +52,14 @@ export default function page() {
 
 
             <div className="pt-4 max-w-xl mx-auto">
-            <div className="relative flex items-center shadow-lg rounded-2xl bg-white border border-slate-200 p-2 focus-within:ring-2 focus-within:ring-blue-500">
+            <div className="relative flex items-center shadow-lg rounded-2xl bg-white border border-slate-200 md:p-2 focus-within:ring-2 focus-within:ring-blue-500">
              <FaSearch className='text-gray-300 text-2xl'/>
               <input
                 type="text"
                 placeholder="Search destinations..."
-                className="w-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none px-2 py-2"
+                className="w-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none px-2 md:py-2"
               />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2.5 rounded-xl transition-colors">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-1 md:py-2.5 rounded-xl transition-colors">
                 Search
               </button>
             </div>
