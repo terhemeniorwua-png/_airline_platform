@@ -47,21 +47,19 @@ export default function Navbar() {
         displayNav && (
           <nav className='bg-[#000000f0] text-white font-bold absolute w-full top-16' id='nav'>
         <ul className='flex flex-col items-center justify-between gap-2 py-5'>
-             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+             <Link href='/Explore' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
-             }}>Home</Link>
+             }}>Explore</Link>
              <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
              }}>Flight</Link>
-             <Link href='/Contact' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+             <Link href='/Hotel' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
-             }}>Tour</Link>
+             }}>Hotel</Link>
              <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
-             }}>About</Link>
-             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
-              setDisplayNav(false)
-             }}>Support</Link>
+             }}>Deal</Link>
+            
         </ul>
       </nav>
         )
