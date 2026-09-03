@@ -83,9 +83,9 @@ export default function Navbar() {
           </Link>
 
         <ul className='flex justify-between gap-10 pt-5'>
-             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Explore</Link>
+             <Link href='/Explore' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Explore</Link>
              <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Flights</Link>
-             <Link href='/Contact' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Hotels</Link>
+             <Link href='/Hotel' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Hotels</Link>
              <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Deals</Link>
         </ul>
 

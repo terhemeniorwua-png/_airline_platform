@@ -16,7 +16,11 @@ export default function Page() {
             </h1>
             <p className='text-xl'>Your journey starts here.</p>
 
-            <button className="px-5 py-2 border-2 mt-12 font-light rounded">Explore Destinations</button>
+            <button className="px-5 py-2 border-2 mt-12 font-light rounded">
+              <Link href='/Explore'>
+                Explore Destinations
+              </Link>
+            </button>
         </div>
 
 

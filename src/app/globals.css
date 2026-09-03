@@ -17,6 +17,17 @@ body{
 }
 
 
+.ExploreBg{
+  background: linear-gradient(
+     90deg,
+  rgba(0  , 0 , 0  , .80),
+  rgba(7, 26, 43, .25)
+  ),
+  url(../../public/dubai.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 
 /* 
