@@ -6,14 +6,14 @@ import PriceBreakDown from './PriceBreakDown'
 
 export default function page() {
 
-    const [airline, setAirline] = useState(null)
+    const [airline, setAirline] = useState('airline')
     const [range, setRange] = useState(1000000)
   return (
     
     <>
         <div>
             <Header />
-            <div className='flex gap-10 py-10'>
+            <div className='md:flex gap-10 py-10'>
                 <Dashboard 
                 setAirline={setAirline} 
                 setRange={setRange} 
@@ -22,6 +22,7 @@ export default function page() {
                 <PriceBreakDown 
                 airline={airline} 
                 range={range}
+                setRange={setRange}
                 />
             </div>
         </div>

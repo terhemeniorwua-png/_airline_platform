@@ -13,7 +13,7 @@ export default function Dashboard({setAirline, range, setRange}) {
   return (
     <>
     
-        <div className='pl-20 w-120'>
+        <div className='pl-5 md:pl-20 md:w-120'>
             <h2>Filter</h2>
 
 
@@ -21,7 +21,7 @@ export default function Dashboard({setAirline, range, setRange}) {
 {/* Stops */}
             <h4>Stops</h4>
 
-          <div className='space-y-2'>
+          <div className='max-md:flex gap-5 space-y-2 '>
             <div className='space-x-2'>
              <input 
             type="radio" 
@@ -72,9 +72,9 @@ export default function Dashboard({setAirline, range, setRange}) {
                 max='2000000'
                 value={range}
                 onChange={(e)=>{setRange(e.target.value)}}
-                className='w-full'
+                className='w-[70%] md:w-full'
                 />
-                <div className='flex justify-between text-sm'>
+                <div className='flex justify-between max-md:pr-20 text-sm'>
                     <p>$1,000,000</p>
                     <p>$2,000,000</p>
                 </div>
@@ -87,7 +87,7 @@ export default function Dashboard({setAirline, range, setRange}) {
             <div>
                 <h4>Airline</h4>
 
-                <div>
+                <div className='max-md:flex space-x-5'>
                    <div className='space-x-2'>
                      <input 
                     type="radio" 
