@@ -1,6 +1,8 @@
 // import Image from 'next/image'
 
 import { FaArrowRight } from "react-icons/fa";
+import Destination from "./Home/Destination";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -21,9 +23,9 @@ export default function Page() {
   {/* search flight  */}
   
 
-        <div className=" py-2 w-[50%] px-5 shadow-2xl m-auto bg-white relative bottom-10 rounded text-[13px]">
+        <div className=" py-2 w-[90%] md:w-[50%] px-5 shadow-2xl m-auto bg-white relative bottom-24 md:bottom-10 rounded text-[10px] md:text-[13px]">
 
-          <div className="flex items-center gap-10">
+          <div className="flex items-center max-md:justify-between md:gap-10">
 
             <div className="flex gap-1">
               <input 
@@ -57,16 +59,16 @@ export default function Page() {
        </div>
        </div>
 
-    <div className="flex gap-10 items-center text-sm pt-5">
+    <div className="flex max-md:justify-between md:gap-10 items-center text-sm pt-5">
 
       <div>
           <h6>From</h6>
-          <p className="text-3xl font-light">Lagos (LOS)</p>
+          <p className="text-xl md:text-3xl font-light">Lagos (LOS)</p>
       </div>
       <FaArrowRight />
       <div>
           <h6>To</h6>
-          <p className="text-3xl font-light">London (LHR)</p>
+          <p className="text-xl md:text-3xl font-light">London (LHR)</p>
       </div>
 
 
@@ -76,7 +78,7 @@ export default function Page() {
 
       {/* schedule */}
 
-      <div className="flex justify-between items-center">
+      <div className="md:flex justify-between items-center">
 
           <div>
           
@@ -97,11 +99,12 @@ export default function Page() {
             <input type="number" id="num" className="w-8 outline-0 ml-4"/> <span>Person / People</span>
           </div>
 
-          <button className="flex items-center gap-1 bg-blue-700 px-5 py-2 rounded text-white font-semibold hover:bg-blue-600 duration-200">Search Flights <FaArrowRight /></button>
+          <Link href='/SearchFlight' className="flex justify-center items-center gap-1 bg-blue-700 px-5 py-2 rounded text-white font-semibold hover:bg-blue-600 duration-200">Search Flights <FaArrowRight /></Link>
 
       </div>
       </div>
 
+    <Destination />
 
     </div>
   );
