@@ -40,13 +40,13 @@ export default function page() {
   return (
     <>
     
-        <div className='ExploreBg h-screen text-center pt-44 text-white'>
+        <div className='ExploreBg h-screen text-center pt-20 md:pt-44 text-white'>
 
             <span className='text-md text-gray-400'>The world is waiting for You</span>
 
-            <h1 className='font-black text-6xl w-[65%] m-auto  py-5'>Find the say for your next great story.</h1>
+            <h1 className='font-black text-3xl md:text-6xl md:w-[65%] m-auto pb-5 md:py-5'>Find the say for your next great story.</h1>
 
-            <p className='text-md w-[35%] m-auto text-gray-400'>Hotels, homes, apartments and retreats with real deals, anywhere in the world
+            <p className='text-md w-[70%] md:w-[35%] m-auto text-gray-400'>Hotels, homes, apartments and retreats with real deals, anywhere in the world
 
             </p>
 
