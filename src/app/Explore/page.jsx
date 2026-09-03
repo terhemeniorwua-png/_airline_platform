@@ -52,12 +52,12 @@ export default function page() {
 
 
             <div className="pt-4 max-w-xl mx-auto">
-            <div className="relative flex items-center shadow-lg rounded-2xl bg-white border border-slate-200 md:p-2 focus-within:ring-2 focus-within:ring-blue-500">
+            <div className="relative flex items-center shadow-lg rounded-2xl bg-white border border-slate-200 p-1 md:p-2 focus-within:ring-2 focus-within:ring-blue-500">
              <FaSearch className='text-gray-300 text-2xl'/>
               <input
                 type="text"
                 placeholder="Search destinations..."
-                className="w-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none px-2 md:py-2"
+                className="w-full bg-transparent text-slate-900 placeholder-slate-400 focus:outline-none px-2 py-1 md:py-2"
               />
               <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-1 md:py-2.5 rounded-xl transition-colors">
                 Search
@@ -70,7 +70,7 @@ export default function page() {
         <div className="pt-28">
           <div className="text-center bg-slate-900">
             <h2 className="text-sm pt-5  text-gray-400 italic">Top 3 trending destinations</h2>
-            <p className='text-3xl'>The destinations travelers are booking right now</p>
+            <p className='text-xl max-md:px-5 md:text-3xl'>The destinations travelers are booking right now</p>
             <p className="text-sm text-gray-400">Those who searched for Greece or booked this destinations</p>
           </div>
 
