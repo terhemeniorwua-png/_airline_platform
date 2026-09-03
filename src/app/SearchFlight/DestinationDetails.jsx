@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight, FaPlane } from 'react-icons/fa'
 
-export default function DestinationDetails({Prce, town, destination, duration1, duration2}) {
+export default function DestinationDetails({Prce, setPage, town, destination, duration1, duration2, setFee, setTaxes, fee, tax, setRange}) {
   return (
     <div>
          
@@ -41,10 +41,10 @@ export default function DestinationDetails({Prce, town, destination, duration1, 
 
                     <ul className='space-y-2 text-right'>
                         <li>${
-                                Prce - 120000 + 70000
+                                Prce - fee + tax
                             }</li>
-                        <li>$120, 000</li>
-                        <li>$70,000</li>
+                        <li>${fee}</li>
+                        <li>${tax}</li>
                     </ul>
                </div>
 
@@ -54,7 +54,12 @@ export default function DestinationDetails({Prce, town, destination, duration1, 
                </ul>
 
                <button className='bg-blue-700 text-white text-center w-full py-2 my-5 rounded'>
-                <Link href='/Information'>
+                <Link href='/SearchFlight' onClick={()=>{
+                    setPage('form')
+                    setFee(fee)
+                    setTaxes(tax)
+                    setRange(Prce)
+                }}>
                             | Continue to passengers details |
                 </Link>
                </button>

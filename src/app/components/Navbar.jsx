@@ -47,11 +47,21 @@ export default function Navbar() {
         displayNav && (
           <nav className='bg-[#000000f0] text-white font-bold absolute w-full top-16' id='nav'>
         <ul className='flex flex-col items-center justify-between gap-2 py-5'>
-             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Home</Link>
-             <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Flight</Link>
-             <Link href='/Contact' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Tour</Link>
-             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>About</Link>
-             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Support</Link>
+             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+              setDisplayNav(false)
+             }}>Home</Link>
+             <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+              setDisplayNav(false)
+             }}>Flight</Link>
+             <Link href='/Contact' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+              setDisplayNav(false)
+             }}>Tour</Link>
+             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+              setDisplayNav(false)
+             }}>About</Link>
+             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+              setDisplayNav(false)
+             }}>Support</Link>
         </ul>
       </nav>
         )
@@ -61,7 +71,7 @@ export default function Navbar() {
 
     {/* Desktop Nav */}
 
-        <nav className='flex gap-64 items-center mx-2 rounded-3xl py-2 px-10 max-md:hidden absolute top-2 bg-white'>
+        <nav className='flex gap-56 items-center mx-2 rounded-3xl py-2 px-10 max-md:hidden absolute top-2 bg-white'>
          
           <Link href='/'>
             <Image
@@ -73,7 +83,7 @@ export default function Navbar() {
           </Link>
 
         <ul className='flex justify-between gap-10 pt-5'>
-             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Eplore</Link>
+             <Link href='/' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Explore</Link>
              <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Flights</Link>
              <Link href='/Contact' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Hotels</Link>
              <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Deals</Link>
@@ -90,7 +100,7 @@ export default function Navbar() {
 
             <Link 
           className='flex items-center bg-blue-700 text-white rounded-lg px-8 py-2 hover:bg-blue-600 duration-200'
-          href='/'
+          href='/SearchFlight'
           >
             Book Now
           </Link>

@@ -2,15 +2,15 @@
 import React, { useState } from 'react'
 import { FaArrowRight, FaChevronDown, FaChevronUp, FaGripLinesVertical, FaLine, FaPlane, FaRulerHorizontal } from 'react-icons/fa'
 import DestinationDetails from './DestinationDetails'
+import Form from '../Information/Form'
 
-export default function PriceBreakDown({airline, range}) {
-
+export default function PriceBreakDown({airline, range, setPage, setTaxes, setFee, setRange}) {
     const [showBreakDown, setShowBreakDown] = useState('none')
 
   return (
     <>
-    
-       <div className='max-md:pl-5 md:w-[56%] space-y-5'>
+  
+            <div className='max-md:pl-5 md:w-[56%] space-y-5'>
          <h4>24 flights found</h4>
         <div className='border-2 rounded'>
             <div className='flex items-center justify-between p-5'>
@@ -37,7 +37,12 @@ export default function PriceBreakDown({airline, range}) {
                     destination='London'
                     range={range}
                     Prce={12400000}
-                    // airline=''
+                    setPage={setPage}
+                    fee={140000}
+                    tax={20000}
+                    setFee={setFee}
+                    setTaxes={setTaxes}
+                    setRange={setRange}
                 />
                )}
 
@@ -69,12 +74,21 @@ export default function PriceBreakDown({airline, range}) {
                     destination='Dubai'
                     range={range}
                     Prce={13800000}
-                    // airline=''
+                    setPage={setPage}
+                    setFee={setFee}
+                    setTaxes={setTaxes}
+                    fee={140000}
+                    tax={20000}
+                    setRange={setRange}
                 />
                )}
 
         </div>
         </div>
+
+      
+
+       
     </>
   )
 }
