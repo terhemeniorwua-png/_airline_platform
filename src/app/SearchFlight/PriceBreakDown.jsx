@@ -29,7 +29,7 @@ export default function PriceBreakDown({
 
         <div>
           <h4 className="text-lg font-bold text-slate-900">
-            24 flights found
+            2 flights found
           </h4>
 
           <p className="mt-1 text-xs text-gray-500">
