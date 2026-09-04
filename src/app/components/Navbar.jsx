@@ -60,7 +60,7 @@ export default function Navbar() {
              <Link href='/Hotel' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
              }}>Hotel</Link>
-             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
+             <Link href='/dashboard' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700' onClick={()=>{
               setDisplayNav(false)
              }}>Deal</Link>
             
@@ -75,20 +75,19 @@ export default function Navbar() {
 
         <nav className='flex gap-56 items-center mx-2 rounded-3xl py-2 px-10 max-md:hidden absolute top-2 bg-white'>
          
-          <Link href='/dashboard'>
+          
             <Image
           src='/logo.png'
           height={150}
           width={150}
           alt='logo'
         />
-          </Link>
 
         <ul className='flex justify-between gap-10 pt-5'>
              <Link href='/Explore' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Explore</Link>
              <Link href='/About' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Flights</Link>
              <Link href='/Hotel' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Hotels</Link>
-             <Link href='/News' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Deals</Link>
+             <Link href='/dashboard' className='hover:text-blue-700 hover:border-b hover:border-b-blue-700'>Deals</Link>
         </ul>
 
         <div className='flex items-center gap-5'>
