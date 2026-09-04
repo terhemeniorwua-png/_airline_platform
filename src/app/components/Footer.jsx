@@ -1,23 +1,16 @@
 "use client";
 
 import {
-//   Facebook,
-//   Instagram,
-//   Twitter,
-//   Youtube,
-  ArrowRight,
-//   MapPin,
-  Mail,
-  Phone,
-} from "lucide-react";
+  ArrowRight,Mail,Phone} from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-[#080e1c] text-white">
 
-      {/* Newsletter section */}
+     
       <div className="border-b border-white/10">
-        <div className="mx-auto flex max-w-[1400px] flex-col gap-6 px-6 py-12 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:px-14">
+        <div className="mx-auto flex w-full flex-col gap-6 px-6 py-12 sm:px-10 lg:flex-row lg:items-center lg:justify-between lg:px-14">
 
           <div className="max-w-xl">
             <p className="mb-2 text-sm font-medium text-[#5d91c4]">
@@ -42,22 +35,7 @@ export default function Footer() {
                 className="min-w-0 flex-1 bg-transparent px-3 text-sm text-gray-900 outline-none placeholder:text-gray-400"
               />
 
-              <button
-                className="
-                  flex
-                  shrink-0
-                  items-center
-                  gap-2
-                  rounded-lg
-                  bg-[#286da5]
-                  px-4
-                  py-3
-                  text-sm
-                  font-medium
-                  text-white
-                  transition
-                  hover:bg-[#205b8b]
-                "
+              <button className="flex shrink-0 items-center gap-2 rounded-lg bg-[#286da5] px-4 py-3 text-sm font-medium text-white transition hover:bg-[#205b8b] "
               >
                 Subscribe
                 <ArrowRight size={16} />
@@ -72,13 +50,11 @@ export default function Footer() {
         </div>
       </div>
 
-
-      {/* Main footer */}
       <div className="mx-auto max-w-[1400px] px-6 py-12 sm:px-10 lg:px-14">
 
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr]">
 
-          {/* Brand */}
+         
           <div>
 
             <div className="mb-5 flex items-center gap-2">
@@ -97,7 +73,6 @@ export default function Footer() {
             </p>
 
 
-            {/* Contact */}
             <div className="mt-6 space-y-3">
 
               {/* <div className="flex items-center gap-3 text-sm text-gray-400">
@@ -107,12 +82,12 @@ export default function Footer() {
 
               <div className="flex items-center gap-3 text-sm text-gray-400">
                 <Mail size={16} className="text-[#5d91c4]" />
-                hello@wanderlust.com
+                sky@wanderlust.com
               </div>
 
               <div className="flex items-center gap-3 text-sm text-gray-400">
                 <Phone size={16} className="text-[#5d91c4]" />
-                +234 800 000 0000
+                +234 9166354571
               </div>
 
             </div>
@@ -260,7 +235,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
 
   <a
-    href="#"
+    href="https://web.facebook.com/philip.iorwua.9"
     aria-label="Facebook"
     className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition hover:bg-white hover:text-[#080e1c]"
   >
@@ -268,28 +243,21 @@ export default function Footer() {
   </a>
 
   <a
-    href="#"
+    href="https://www.instagram.com/?hl=en"
     aria-label="Instagram"
     className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition hover:bg-white hover:text-[#080e1c]"
   >
-    <span className="text-xs font-semibold">ig</span>
+    <FaInstagram />
   </a>
 
   <a
-    href="#"
+    href="https://x.com/PIorwua12080"
     aria-label="X"
     className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition hover:bg-white hover:text-[#080e1c]"
   >
     <span className="text-sm font-semibold">𝕏</span>
   </a>
 
-  <a
-    href="#"
-    aria-label="YouTube"
-    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-gray-400 transition hover:bg-white hover:text-[#080e1c]"
-  >
-    <span className="text-xs font-semibold">▶</span>
-  </a>
 
 </div>
 
