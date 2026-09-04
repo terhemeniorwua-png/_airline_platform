@@ -75,7 +75,7 @@ export default function Navbar() {
 
         <nav className='flex gap-56 items-center mx-2 rounded-3xl py-2 px-10 max-md:hidden absolute top-2 bg-white'>
          
-          <Link href='/'>
+          <Link href='/dashboard'>
             <Image
           src='/logo.png'
           height={150}
